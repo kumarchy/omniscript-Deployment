@@ -1,0 +1,28 @@
+{
+    "ContextId": null,
+    "VHS_CreateTaskToCase": {
+        "CommentsForTask": null,
+        "DueDateForTask": null,
+        "Lookup1": null,
+        "Lookup2": null,
+        "Lookup3": null,
+        "PriorityForTask": null,
+        "StatusForTask": null,
+        "SubjectForTaskCreation": null,
+        "Text1": null,
+        "TypeForTask": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "CreateTaskRelatedToCaseCreated": null,
+        "ExtractCaseForTask": null,
+        "SetCaseIdForTask": null,
+        "VHS_CreateTaskToCase": null
+    }
+}

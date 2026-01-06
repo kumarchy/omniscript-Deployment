@@ -1,0 +1,212 @@
+[
+    {
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item7",
+        "InputFieldName": "VHS_CreateTaskToCase:DueDateForTask",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ActivityDate",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item6",
+        "InputFieldName": "VHS_CreateTaskToCase:CommentsForTask",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Description",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item4",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item1",
+        "InputFieldName": "VHS_CreateTaskToCase:AccountForTask-Block:allAccId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "J_FAD_Account__c",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item2",
+        "InputFieldName": "HCPForTask",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "J_FAD_Contact__c",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Medium",
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item5",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Priority",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item10",
+        "InputFieldName": "FadRecTypeId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "RecordTypeId",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "In Progress",
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item8",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item9",
+        "InputFieldName": "VHS_CreateTaskToCase:SubjectForTaskCreate",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Subject",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item3",
+        "InputFieldName": "VHS_CreateTaskToCase:TaskTypeByRecTyoe",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSTaskCreationForCaseHCPCustom0jIO40000002AJRMA2Item0",
+        "InputFieldName": "CaseIdTobeUsed",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSTaskCreationForCaseHCP",
+        "OmniDataTransformationId": {
+            "Name": "VHSTaskCreationForCaseHCP",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSTaskCreationForCaseHCP",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "WhatId",
+        "OutputObjectName": "Task",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

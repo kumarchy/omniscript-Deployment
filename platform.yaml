@@ -1,0 +1,50 @@
+projectPath: ./vlocity
+# npmAuthKey: Y3VzdG9tZXJfdmFsdWVfaGVhbHRoX2luYzp2UlBIQ1g4WFgySUozTExQ
+
+queries:
+  # 1. Get OmniScripts
+  - VlocityDataPackType: OmniScript
+    query: >
+      SELECT Id, Name, %vlocity_namespace%__Type__c, %vlocity_namespace%__SubType__c,
+             %vlocity_namespace%__Language__c
+      FROM %vlocity_namespace%__OmniScript__c
+      WHERE Name IN ('VHS_CreateTaskForCase', 'VHS_CreateCase')
+        AND %vlocity_namespace%__IsActive__c = true
+        AND %vlocity_namespace%__IsProcedure__c = false
+ 
+  # 2. Get DataRaptors for VHS_CreateTaskForCase
+  - VlocityDataPackType: DataRaptor
+    query: >
+      SELECT Id, Name 
+      FROM %vlocity_namespace%__DRBundle__c
+      WHERE Name IN ( 
+        'VHSCreateTaskForCaseCreated',
+        'VHSGetTaskRecordTypeForCaseCreation',
+        'VHSExtractAccountForTaskCreation',
+        'VHSTaskCreationForCaseHCP',
+        'VHSTaskCreationForCaseCreated'
+      )
+ 
+  # 3. Get DataRaptors for VHS_CreateCase
+  - VlocityDataPackType: DataRaptor
+    query: >
+      SELECT Id, Name
+      FROM %vlocity_namespace%__DRBundle__c
+      WHERE Name IN (
+        'VHSExtractPatientForCase',
+        'VHSExtrractForHcoHcpCheckValue',
+        'VHSExtractExistingCaseWithallsamedata',
+        'VHSCreateCaseRecordForPatient',
+        'VHSCreateCase',
+        'VHSCreateCaseRecord',
+        'VHSExtractCaseForHCP',
+        'VHSExtractCaseForProduct',
+        'VHSExtractRecordForHCP',
+        'VHSExtractRecordForProduct',
+        'VHSExtractRecordForPatient',
+        'VHSExtractHCPPatient',
+        'VHSExtractHCOForProduct',
+        'VHSExtractHCOPatient'
+      )
+
+

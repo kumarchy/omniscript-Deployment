@@ -1,0 +1,37 @@
+{
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "SetInputedValuesForCase",
+    "OmniProcessId": {
+        "Name": "VHS_CreateCase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Case/Create/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "controlWidth": 12,
+        "elementValueMap": {
+            "CaseDescription prepopulate": "%CaseDescription%",
+            "CaseSubject prepopluate": "%CaseSubject%",
+            "CasesubType prepopulate": "%CasesubType%",
+            "Patient Name prepopulate": "%CasePatient%",
+            "Type Prepopulate": "%caseType%"
+        },
+        "label": "Set Inputed Values",
+        "message": {
+        },
+        "pubsub": false,
+        "show": null,
+        "showPersistentComponent": [
+            true,
+            false
+        ],
+        "ssm": false,
+        "wpm": false
+    },
+    "Type": "Set Values",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Case/Create/English/SetInputedValuesForCase"
+}

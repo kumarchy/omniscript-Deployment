@@ -1,0 +1,67 @@
+Org: kishor.dhaneshkumar@valuehealthaidev2.com
+Version: 1.17.20
+Node: v22.21.0
+PackageVersion: !<tag:yaml.org,2002:js/undefined> ''
+Namespace: omnistudio
+Job: VDX
+Action: Export
+ProjectPath: ./vlocity
+TotalTime: 0m 12s
+Count:
+  Success:
+    OmniScript: 2
+    DataRaptor: 17
+  Remaining:
+    DataRaptor: 11
+  Error:
+    DataRaptor: 3
+Errors:
+  - OmniScript/Case_Create_English references DataRaptor/VHSCreateCaseRecord which was not found.
+  - OmniScript/Case_Create_English references DataRaptor/VHSCreateCaseRecordForPatient which was not found.
+  - OmniScript/Case_Create_English references DataRaptor/VHSCreateCase which was not found.
+Status:
+  Success:
+    OmniScript:
+      - Case_Create_English
+      - Task_Create_English
+    DataRaptor:
+      - VHSCreateTaskForCaseCreated
+      - VHSExtractAccountForTaskCreation
+      - VHSExtractCaseForHCP
+      - VHSExtractCaseForProduct
+      - VHSExtractCasePatient
+      - VHSExtractExistingCaseWithallsamedata
+      - VHSExtractHCOForProduct
+      - VHSExtractHCOPatient
+      - VHSExtractHCPPatient
+      - VHSExtractPatientForCase
+      - VHSExtractRecordForHCP
+      - VHSExtractRecordForPatient
+      - VHSExtractRecordForProduct
+      - VHSExtrractForHcoHcpCheckValue
+      - VHSGetTaskRecordTypeForCaseCreation
+      - VHSTaskCreationForCaseCreated
+      - VHSTaskCreationForCaseHCP
+  Remaining:
+    DataRaptor:
+      - 2f112f24f49173a11c996dc8a2f71c50
+      - 3a9a8051ae33e7a4fb544f9bd6cdb99f
+      - 3f52d4b3086e455117edfdae03906623
+      - 4235fe224b36fbb535ac4c6aa5fd4677
+      - 6f29f9dd56699b33dac43c0dfe30b79f
+      - 77fb7063d9c8c5ad0c38c3bca13d7508
+      - 7bd8a959485bf11a4f70951c5d59809c
+      - 88f4df22d83c39f66f23d08ebd46b6c2
+      - a03484c261b68219bf54935c4db7313b
+      - dd8f09b29dca07012031c3197686e945
+      - f341d571065b921e78501c6ac172912a
+  Error:
+    DataRaptor:
+      - 09f1b8d2806881f971d8b4dfa9474daf
+      - 27ea5a07c2e73553dfdd29a2bcd31978
+      - 35d8d7c67747526badafb1347ded1a72
+StatusCount:
+  Remaining: 0
+  Success: 25
+  Error: 3
+id: !<tag:yaml.org,2002:js/undefined> ''

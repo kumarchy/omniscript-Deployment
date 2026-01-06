@@ -1,0 +1,7 @@
+[
+    "DataRaptor/VHSCreateTaskForCaseCreated",
+    "DataRaptor/VHSExtractAccountForTaskCreation",
+    "DataRaptor/VHSGetTaskRecordTypeForCaseCreation",
+    "DataRaptor/VHSTaskCreationForCaseCreated",
+    "DataRaptor/VHSTaskCreationForCaseHCP"
+]

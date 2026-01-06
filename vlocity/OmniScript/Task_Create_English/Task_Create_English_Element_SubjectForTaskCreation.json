@@ -1,0 +1,156 @@
+{
+    "IsActive": false,
+    "IsOmniScriptEmbeddable": true,
+    "Name": "SubjectForTaskCreation",
+    "OmniProcessId": {
+        "Name": "VHS_CreateTaskForCase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Task/Create/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "ParentElementId": {
+        "Name": "VHS_CreateTaskToCase",
+        "OmniProcessId": {
+            "Name": "VHS_CreateTaskForCase",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniProcess/Task/Create/English",
+            "VlocityRecordSObjectType": "OmniProcess"
+        },
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcessElement/OmniProcess/Task/Create/English/VHS_CreateTaskToCase",
+        "VlocityRecordSObjectType": "OmniProcessElement"
+    },
+    "ParentElementName": "VHS_CreateTaskToCase",
+    "ParentElementType": "Step",
+    "PropertySetConfig": {
+        "HTMLTemplateId": "",
+        "accessibleInFutureSteps": false,
+        "conditionType": "Hide if False",
+        "controlWidth": 12,
+        "controllingField": {
+            "element": "FRM_Task",
+            "source": "Task.RecordType.DeveloperName",
+            "type": ""
+        },
+        "defaultValue": null,
+        "disOnTplt": false,
+        "help": false,
+        "helpText": "",
+        "helpTextPos": "",
+        "hide": false,
+        "inputWidth": 12,
+        "label": "Subject",
+        "optionSource": {
+            "source": "Task.Subject",
+            "type": "SObject"
+        },
+        "options": [
+            {
+                "autoAdv": null,
+                "name": "Benefit Investigation - Patient Interaction",
+                "value": "Benefit Investigation - Patient Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "PA Approved - Patient Follow up",
+                "value": "PA Approved - Patient Follow up"
+            },
+            {
+                "autoAdv": null,
+                "name": "Appeal Approved - Patient Follow up",
+                "value": "Appeal Approved - Patient Follow up"
+            },
+            {
+                "autoAdv": null,
+                "name": "Missed Shipment - Patient Interaction",
+                "value": "Missed Shipment - Patient Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "PA Approved - SP Follow-up",
+                "value": "PA Approved - SP Follow-up"
+            },
+            {
+                "autoAdv": null,
+                "name": "Appeal Approved - SP Follow-up",
+                "value": "Appeal Approved - SP Follow-up"
+            },
+            {
+                "autoAdv": null,
+                "name": "Missed Shipment - SP Interaction",
+                "value": "Missed Shipment - SP Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "Shipping Info Incomplete - SP Follow-up",
+                "value": "Shipping Info Incomplete - SP Follow-up"
+            },
+            {
+                "autoAdv": null,
+                "name": "HCP Interaction",
+                "value": "HCP Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "Benefit Investigation - HCP Interaction",
+                "value": "Benefit Investigation - HCP Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "Advise PA - HCP Interaction",
+                "value": "Advise PA - HCP Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "Prior Authorization Pending - HCP Follow-up",
+                "value": "Prior Authorization Pending - HCP Follow-up"
+            },
+            {
+                "autoAdv": null,
+                "name": "Advise Appeal - HCP Interaction",
+                "value": "Advise Appeal - HCP Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "Missed Shipment - HCP Interaction",
+                "value": "Missed Shipment - HCP Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "Refill Authorization - HCP Outreach",
+                "value": "Refill Authorization - HCP Outreach"
+            },
+            {
+                "autoAdv": null,
+                "name": "Payer Interaction",
+                "value": "Payer Interaction"
+            },
+            {
+                "autoAdv": null,
+                "name": "Prior Authorization Pending - Payer Follow-up",
+                "value": "Prior Authorization Pending - Payer Follow-up"
+            },
+            {
+                "autoAdv": null,
+                "name": "Prior Authorization Denied - Payer Follow-up",
+                "value": "Prior Authorization Denied - Payer Follow-up"
+            },
+            {
+                "autoAdv": null,
+                "name": "Appeal Pending - Payer Follow-up",
+                "value": "Appeal Pending - Payer Follow-up"
+            }
+        ],
+        "readOnly": false,
+        "repeat": false,
+        "repeatClone": false,
+        "repeatLimit": null,
+        "required": true,
+        "show": null,
+        "showInputWidth": false
+    },
+    "Type": "Select",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Task/Create/English/SubjectForTaskCreation"
+}

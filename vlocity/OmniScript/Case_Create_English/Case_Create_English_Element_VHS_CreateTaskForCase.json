@@ -1,0 +1,33 @@
+{
+    "EmbeddedOmniScriptKey": "Task|Create|English",
+    "IsActive": true,
+    "IsOmniScriptEmbeddable": false,
+    "Name": "VHS_CreateTaskForCase",
+    "OmniProcessId": {
+        "Name": "VHS_CreateCase",
+        "VlocityDataPackType": "VlocityMatchingKeyObject",
+        "VlocityMatchingRecordSourceKey": "OmniProcess/Case/Create/English",
+        "VlocityRecordSObjectType": "OmniProcess"
+    },
+    "PropertySetConfig": {
+        "Language": "English",
+        "Sub Type": "Create",
+        "Type": "Task",
+        "show": {
+            "group": {
+                "operator": "AND",
+                "rules": [
+                    {
+                        "condition": "=",
+                        "data": "Task Yes",
+                        "field": "TaskYesOrNo"
+                    }
+                ]
+            }
+        }
+    },
+    "Type": "OmniScript",
+    "VlocityDataPackType": "SObject",
+    "VlocityRecordSObjectType": "OmniProcessElement",
+    "VlocityRecordSourceKey": "OmniProcessElement/OmniProcess/Case/Create/English/VHS_CreateTaskForCase"
+}
