@@ -36,8 +36,7 @@ pipeline {
     stage('Bootstrap OmniStudio') {
       steps {
         bat """
-        vlocity --sfdx.username TargetOrg ^
-        -job bootstrap.yaml packDeploy
+        npx vlocity --sfdx.username TargetOrg -job bootstrap.yaml packDeploy
         """
       }
     }
@@ -45,8 +44,7 @@ pipeline {
     stage('Deploy OmniScripts & DataRaptors') {
       steps {
         bat """
-        vlocity --sfdx.username TargetOrg ^
-        -job platform.yaml packDeploy --verbose
+        npx vlocity --sfdx.username TargetOrg -job platform.yaml packDeploy --verbose
         """
       }
     }
