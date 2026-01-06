@@ -4,7 +4,6 @@ pipeline {
   environment {
     SF_INSTANCE_URL = "https://test.salesforce.com"
     SF_AUTOUPDATE_DISABLE = "true"
-    SFDX_USE_GENERIC_UNIX_KEYCHAIN = "true"
   }
 
   stages {
@@ -22,13 +21,13 @@ pipeline {
           string(credentialsId: 'SF_OMUSERNAME', variable: 'USERNAME'),
           file(credentialsId: 'SF_OMJWT_KEY', variable: 'JWT_KEY')
         ]) {
-          sh """
-            sf org login jwt \
-              --client-id $CLIENT_ID \
-              --jwt-key-file $JWT_KEY \
-              --username $USERNAME \
-              --instance-url $SF_INSTANCE_URL \
-              --alias TargetOrg
+          bat """
+          sf org login jwt ^
+            --client-id %CLIENT_ID% ^
+            --jwt-key-file "%JWT_KEY%" ^
+            --username %USERNAME% ^
+            --instance-url %SF_INSTANCE_URL% ^
+            --alias TargetOrg
           """
         }
       }
@@ -36,18 +35,18 @@ pipeline {
 
     stage('Bootstrap OmniStudio') {
       steps {
-        sh """
-          vlocity --sfdx.username TargetOrg \
-          -job bootstrap.yaml packDeploy
+        bat """
+        vlocity --sfdx.username TargetOrg ^
+        -job bootstrap.yaml packDeploy
         """
       }
     }
 
     stage('Deploy OmniScripts & DataRaptors') {
       steps {
-        sh """
-          vlocity --sfdx.username TargetOrg \
-          -job platform.yaml packDeploy --verbose
+        bat """
+        vlocity --sfdx.username TargetOrg ^
+        -job platform.yaml packDeploy --verbose
         """
       }
     }
