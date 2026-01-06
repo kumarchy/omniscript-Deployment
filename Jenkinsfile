@@ -1,6 +1,10 @@
 pipeline {
   agent any
 
+   tools {
+    nodejs 'NodeJS-LTS'  // This should match the name you configured
+  }
+
   environment {
     SF_INSTANCE_URL = "https://test.salesforce.com"
     SF_AUTOUPDATE_DISABLE = "true"
