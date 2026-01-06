@@ -37,13 +37,13 @@ pipeline {
       }
     }
 
-    stage('Bootstrap OmniStudio') {
-      steps {
-        bat """
-        npx vlocity --sfdx.username TargetOrg -job bootstrap.yaml packDeploy
-        """
-      }
-    }
+    // stage('Bootstrap OmniStudio') {
+    //   steps {
+    //     bat """
+    //     npx vlocity --sfdx.username TargetOrg -job bootstrap.yaml packDeploy
+    //     """
+    //   }
+    // }
 
     stage('Deploy OmniScripts & DataRaptors') {
       steps {
