@@ -243,46 +243,18 @@ pipeline {
   environment {
     SF_INSTANCE_URL = "https://test.salesforce.com"
     SF_AUTOUPDATE_DISABLE = "true"
-    // Email config will be loaded from properties file
-    EMAIL_RECIPIENTS = ""
-    SENDER_NAME = ""
-    CC_LIST = ""
-    // REPLY_TO = ""
+    
+    // Configure recipients directly here (easier approach)
+    EMAIL_RECIPIENTS = "lamphukumar228@gmail.com,chaudharykumar228@gmail.com"
+    CC_LIST = "22ad024@kpriet.ac.in"
+    SENDER_NAME = "OmniStudio Deployment Bot"
+    REPLY_TO = "lamphukumar228@gmail.com"
   }
 
   stages {
     stage('Checkout') {
       steps {
         checkout scm
-      }
-    }
-
-    stage('Load Email Configuration') {
-      steps {
-        script {
-          echo '📧 Loading email configuration from properties file...'
-          
-          // Check if config file exists
-          if (fileExists('email-config.properties')) {
-            def props = readProperties file: 'email-config.properties'
-            
-            // Load email settings
-            env.EMAIL_RECIPIENTS = props.recipients ?: 'lamphukumar228@gmail.com'
-            env.SENDER_NAME = props.sender_name ?: 'Jenkins CI/CD'
-            env.CC_LIST = props.cc_list ?: ''
-            // env.REPLY_TO = props.reply_to ?: 'lamphukumar228@gmail.com'
-            
-            echo "✅ Email Recipients: ${env.EMAIL_RECIPIENTS}"
-            echo "✅ Sender Name: ${env.SENDER_NAME}"
-            echo "✅ CC List: ${env.CC_LIST ?: 'None'}"
-            // echo "✅ Reply To: ${env.REPLY_TO}"
-          } else {
-            echo '⚠️ email-config.properties not found, using defaults'
-            env.EMAIL_RECIPIENTS = 'lamphukumar228@gmail.com'
-            env.SENDER_NAME = 'Jenkins CI/CD'
-            // env.REPLY_TO = 'lamphukumar228@gmail.com'
-          }
-        }
       }
     }
 
@@ -415,12 +387,31 @@ pipeline {
             </html>
           """,
           to: env.EMAIL_RECIPIENTS,
-          cc: env.CC_LIST ?: null,
           from: "\"${env.SENDER_NAME}\" <lamphukumar228@gmail.com>",
-          // replyTo: env.REPLY_TO,
+          replyTo: env.REPLY_TO,
           mimeType: 'text/html',
           attachLog: false
         )
+        
+        // Send CC if configured
+        if (env.CC_LIST && env.CC_LIST != '') {
+          emailext (
+            subject: "✅ SUCCESS: OmniStudio Deployment - Build #${env.BUILD_NUMBER} [CC]",
+            body: """
+              <html>
+              <body style="font-family: Arial;">
+                <p>This is a CC notification of a successful OmniStudio deployment.</p>
+                <p><strong>Build #${env.BUILD_NUMBER}</strong> completed successfully.</p>
+                <p><a href="${env.BUILD_URL}">View Details</a></p>
+              </body>
+              </html>
+            """,
+            to: env.CC_LIST,
+            from: "\"${env.SENDER_NAME}\" <lamphukumar228@gmail.com>",
+            mimeType: 'text/html'
+          )
+        }
+        
         echo '✅ Success notification sent successfully!'
       }
     }
@@ -502,12 +493,31 @@ pipeline {
             </html>
           """,
           to: env.EMAIL_RECIPIENTS,
-          cc: env.CC_LIST ?: null,
           from: "\"${env.SENDER_NAME}\" <lamphukumar228@gmail.com>",
-          // replyTo: env.REPLY_TO,
+          replyTo: env.REPLY_TO,
           mimeType: 'text/html',
           attachLog: true
         )
+        
+        // Send CC if configured
+        if (env.CC_LIST && env.CC_LIST != '') {
+          emailext (
+            subject: "❌ FAILED: OmniStudio Deployment - Build #${env.BUILD_NUMBER} [CC]",
+            body: """
+              <html>
+              <body style="font-family: Arial;">
+                <p style="color: #f44336;"><strong>⚠️ Deployment Failed</strong></p>
+                <p>Build #${env.BUILD_NUMBER} has failed.</p>
+                <p><a href="${env.BUILD_URL}console">View Console Logs</a></p>
+              </body>
+              </html>
+            """,
+            to: env.CC_LIST,
+            from: "\"${env.SENDER_NAME}\" <lamphukumar228@gmail.com>",
+            mimeType: 'text/html'
+          )
+        }
+        
         echo '📧 Failure notification sent successfully!'
       }
     }
