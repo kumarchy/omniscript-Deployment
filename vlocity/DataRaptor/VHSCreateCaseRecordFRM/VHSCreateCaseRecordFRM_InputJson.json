@@ -1,0 +1,22 @@
+{
+    "ContextId": null,
+    "VHS_CreateCaseForPatient": {
+        "CaseDescription": null,
+        "CasePatient-Block": {
+            "CasePatient": null
+        },
+        "CaseSubject": null,
+        "CasesubType": null,
+        "caseType": null
+    },
+    "timeStamp": null,
+    "userId": null,
+    "userName": null,
+    "userProfile": null,
+    "userTimeZone": null,
+    "vlcPersistentComponent": {
+    },
+    "vlcTimeTracking": {
+        "VHS_CreateCaseForPatient": null
+    }
+}

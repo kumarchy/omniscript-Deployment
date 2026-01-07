@@ -63,7 +63,7 @@
     "PropertySetConfig": "Case_Create_English_PropertySetConfig.json",
     "SubType": "Create",
     "Type": "Case",
-    "UniqueName": "Case_Create_English_2",
+    "UniqueName": "Case_Create_English_7",
     "VlocityDataPackType": "SObject",
     "VlocityRecordSObjectType": "OmniProcess",
     "VlocityRecordSourceKey": "OmniProcess/Case/Create/English"

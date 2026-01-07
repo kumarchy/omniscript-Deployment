@@ -1,0 +1,288 @@
+[
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom6068",
+        "InputFieldName": "VHS_CreateCaseForPatient:PatientCase-Block:CaseAccId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "AccountId",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom4771",
+        "InputFieldName": "VHS_CreateCaseForPatient:CaseDescription",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Description",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "FilterOperator": "=",
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom274",
+        "IsDisabled": true,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "MigrationValue": "FAKEMAPPING",
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Id",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Web",
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom7259",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Origin",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "Medium",
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom4198",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Priority",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom544",
+        "InputFieldName": "VHS_CreateCaseForPatient:PatientCase-Block:DrugId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "ProductId",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "DefaultValue": "New",
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom3935",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Status",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom7243",
+        "InputFieldName": "VHS_CreateCaseForPatient:CasesubType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Sub_Type__c",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom8524",
+        "InputFieldName": "VHS_CreateCaseForPatient:CaseSubject",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Subject",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom4184",
+        "InputFieldName": "VHS_CreateCaseForPatient:caseType",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "Type",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom933",
+        "InputFieldName": "HCO",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VHS_HCOName__c",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom5303",
+        "InputFieldName": "HCPId",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VHS_HCPName__c",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom7104",
+        "InputFieldName": "GetEnrollee",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VHS_PatientName__c",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom678",
+        "InputFieldName": "ActualValue",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VHS_PayerName__c",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    },
+    {
+        "GlobalKey": "VHSCreateCaseRecordForPatientCustom595",
+        "InputFieldName": "VHS_CreateCaseForPatient:PatientCase-Block:SpecialtyPharmacy",
+        "IsDisabled": false,
+        "IsRequiredForUpsert": false,
+        "IsUpsertKey": false,
+        "Name": "VHSCreateCaseRecordForPatient",
+        "OmniDataTransformationId": {
+            "Name": "VHSCreateCaseRecordForPatient",
+            "VlocityDataPackType": "VlocityMatchingKeyObject",
+            "VlocityMatchingRecordSourceKey": "OmniDataTransform/VHSCreateCaseRecordForPatient",
+            "VlocityRecordSObjectType": "OmniDataTransform"
+        },
+        "OutputCreationSequence": 1,
+        "OutputFieldName": "VHS_PharmacyName__c",
+        "OutputObjectName": "Case",
+        "VlocityDataPackType": "SObject",
+        "VlocityRecordSObjectType": "OmniDataTransformItem"
+    }
+]

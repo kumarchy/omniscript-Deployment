@@ -1,4 +1,7 @@
 [
+    "DataRaptor/VHSCreateCaseFRM",
+    "DataRaptor/VHSCreateCaseRecordFRM",
+    "DataRaptor/VHSCreateCaseRecordForPatient",
     "DataRaptor/VHSExtractCaseForHCP",
     "DataRaptor/VHSExtractCaseForProduct",
     "DataRaptor/VHSExtractCasePatient",
@@ -10,5 +13,6 @@
     "DataRaptor/VHSExtractRecordForHCP",
     "DataRaptor/VHSExtractRecordForPatient",
     "DataRaptor/VHSExtractRecordForProduct",
-    "DataRaptor/VHSExtrractForHcoHcpCheckValue"
+    "DataRaptor/VHSExtrractForHcoHcpCheckValue",
+    "DataRaptor/VHSGetPatients"
 ]
