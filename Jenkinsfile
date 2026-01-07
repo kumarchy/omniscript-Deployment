@@ -245,7 +245,7 @@ pipeline {
     SF_AUTOUPDATE_DISABLE = "true"
     
     // Configure recipients directly here (easier approach)
-    EMAIL_RECIPIENTS = "lamphukumar228@gmail.com,chaudharykumar228@gmail.com"
+    EMAIL_RECIPIENTS = "lamphukumar228@gmail.com,chaudharykumar228@gmail.com,kumar.chaudhary@valuehealthai.com"
     CC_LIST = "22ad024@kpriet.ac.in"
     SENDER_NAME = "OmniStudio Deployment Bot"
     // REPLY_TO = "lamphukumar228@gmail.com"
