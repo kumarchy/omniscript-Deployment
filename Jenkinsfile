@@ -248,7 +248,7 @@ pipeline {
     EMAIL_RECIPIENTS = "lamphukumar228@gmail.com,chaudharykumar228@gmail.com"
     CC_LIST = "22ad024@kpriet.ac.in"
     SENDER_NAME = "OmniStudio Deployment Bot"
-    REPLY_TO = "lamphukumar228@gmail.com"
+    // REPLY_TO = "lamphukumar228@gmail.com"
   }
 
   stages {
@@ -388,7 +388,7 @@ pipeline {
           """,
           to: env.EMAIL_RECIPIENTS,
           from: "\"${env.SENDER_NAME}\" <lamphukumar228@gmail.com>",
-          replyTo: env.REPLY_TO,
+          // replyTo: env.REPLY_TO,
           mimeType: 'text/html',
           attachLog: false
         )
@@ -494,7 +494,7 @@ pipeline {
           """,
           to: env.EMAIL_RECIPIENTS,
           from: "\"${env.SENDER_NAME}\" <lamphukumar228@gmail.com>",
-          replyTo: env.REPLY_TO,
+          // replyTo: env.REPLY_TO,
           mimeType: 'text/html',
           attachLog: true
         )
